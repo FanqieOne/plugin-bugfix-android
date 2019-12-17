@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray300"
+    >
+
+    <TextView
+        android:id="@+id/sendEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorYellow"
+        android:inputType="text"
+        android:text="text send to flutter"
+        android:textColor="#030303"
+        android:textSize="12dp"
+        tools:text="text send to flutter"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/sendEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:height="50dp"
+        android:background="@color/colorBlue"
+        android:text="发送按钮"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/recieveEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/sendButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorYellow"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="recieveText"
+        android:textSize="12sp"
+        android:tooltipText="@string/recieveEditHit"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/recieveButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/recieveEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorBlue"
+        android:text="发送点击事件到Flutter"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible" />
+
+</LinearLayout>

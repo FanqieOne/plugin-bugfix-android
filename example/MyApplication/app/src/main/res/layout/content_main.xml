@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="test" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/resultView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="名称"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:height="50dp"
+        android:background="#758D4E"
+        android:backgroundTint="#F8F8F8"
+        android:text="发送按钮"
+        android:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
