@@ -47,7 +47,7 @@ public class AndroidViewDemo implements PlatformView, MethodCallHandler, StreamH
         setupViews(registrar);
     }
 
-    @Override
+    /*@Override
     public void onInputConnectionLocked() {
 
     }
@@ -55,7 +55,7 @@ public class AndroidViewDemo implements PlatformView, MethodCallHandler, StreamH
     @Override
     public void onInputConnectionUnlocked() {
 
-    }
+    }*/
 
     private void setupViews(final Registrar registrar) {
 
